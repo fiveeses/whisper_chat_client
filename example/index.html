@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Chat via DevConsole</title>
+	<link href="client/app.css" rel="stylesheet" /> 
+</head>
+<body class="u2">
+	<script>
+		const csstag = document.createElement("link");		
+		const appcss = document.createElement("link");
+		csstag.rel="stylesheet";
+		appcss.rel="stylesheet";
+		csstag.href=`../src/index.css?cb=${Date.now()}`;
+		appcss.href=`client/app.css?cb=${Date.now()}`;
+		document.head.appendChild(csstag);
+		document.head.appendChild(appcss);
+
+	</script>
+	<div id="layout" class="layout">
+		<div id="target">
+			<canvas height="480" width="640"></canvas>
+		</div>
+	</div>
+	<script>
+		function writeScriptLink(url) {
+			const script = document.createElement("script");
+			script.src=`${url}?cb=${Date.now()}`;
+			document.body.appendChild(script);
+		}
+
+		setTimeout(function() {
+			writeScriptLink("../dc.umd.js");
+		}, 50);
+		setTimeout(function() {
+			writeScriptLink("client/client.js");
+		}, 150)
+	</script>
+</body>
+</html>

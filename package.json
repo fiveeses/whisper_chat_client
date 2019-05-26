@@ -1,0 +1,42 @@
+{
+  "name": "es6project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "(none)",
+  "scripts": {
+    "iDocs": ".\\node_modules\\.bin\\esdoc",
+    "iTest": ".\\node_modules\\.bin\\karma start",
+    "iTdd": ".\\node_modules\\.bin\\karma start --no-single-run",
+    "listTasks": "gulp --tasks",
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "tdd": "gulp tdd",
+    "qa": "gulp qa",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "fullClean": "gulp fullClean",
+    "fullBuild": "gulp fullBuild",
+    "cleanDocs": "gulp cleanDocs",
+    "buildDocs": "gulp buildDocs",
+    "docs": "gulp runDocs",
+    "fullDocs": "gulp fullRunDocs"
+  },
+  "author": "you <your@e.mail>",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "acorn": "^6.0.0",
+    "del": "^4.1.1",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.2",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-spec-reporter": "0.0.32",
+    "rollup": "^1.12.2"
+  },
+  "dependencies": {}
+}
