@@ -1,7 +1,7 @@
 {
-  "name": "es6project",
+  "name": "whisper_chat_client",
   "version": "0.0.1",
-  "description": "",
+  "description": "A client ui for the whisper chat server",
   "main": "(none)",
   "scripts": {
     "iDocs": ".\\node_modules\\.bin\\esdoc",
@@ -21,9 +21,8 @@
     "docs": "gulp runDocs",
     "fullDocs": "gulp fullRunDocs"
   },
-  "author": "you <your@e.mail>",
-  "private": true,
-  "license": "UNLICENSED",
+  "author": "FiveEses <fiveeses@gmail.com>",
+  "license": "ISC",
   "devDependencies": {
     "acorn": "^6.0.0",
     "del": "^4.1.1",
